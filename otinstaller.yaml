@@ -23,7 +23,7 @@ outputs:
 runtime:
   kind: docker
   # Filled in by the release workflow with the pushed image's digest.
-  image: ghcr.io/osintverse-community/goverview@sha256:0000000000000000000000000000000000000000000000000000000000000000
+  image: ghcr.io/osintverse-community/goverview@sha256:3fb82128a80a4d2aeaa965eece970820598e458e47903d7e8cc9736abc9bdad3
   platforms: [linux/amd64, linux/arm64]
   command: ["goverview", "probe", "--no-output", "--json", "-i", "{url}"]
   output_format: jsonl
